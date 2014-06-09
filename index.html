@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>test</title>
+
+
+</head>
+<body>
+	<h1>Best Prices Around !</h1>
+	<button id = "test"> Give me Time NOW ! </button>
+	<br>
+	<br>
+	<button id = clear> Clear </button>
+	<br>
+	<br>
+	<button id =Prod1 onclick = "func1()" > Kush ?!?</button>
+	<br>
+	<br>
+	<button id =Prod2 onclick="funct2"> Crack  -_- </button>
+	<br>
+	<p>Send me your email and amount. </p>
+	<p>I will contact you.</p>
+	<textarea id="myText"></textarea>
+	<button onclick="sendMail(); return false">Send</button>
+	
+	
+		<div id ="results"></div>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/test.js"> </script>
+
+<script>
+
+	$('#test').click(function(){
+		test.doit($('#results'));
+	});
+
+	$('#clear').click(function(){
+		$('#results').html('');
+	});
+	
+	$('#Prod1').click(function(){
+		window.confirm('Fresh Stock \n\n 1 Oz    .......   180$ \n\n 2  Oz    .......   350$');
+	});
+	
+	$('#Prod2').click(function(){
+		window.alert("I don't deal that shit! \nIt's poison.");
+	});
+	
+	
+</script>
+
+</body>
+</html>
